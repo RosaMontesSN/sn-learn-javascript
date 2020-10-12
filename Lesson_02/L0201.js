@@ -1,5 +1,5 @@
 //
-//  L02S01 - semicolon example
+//  L02S01 - Semicolon example
 //
 
 // Required:
@@ -19,7 +19,7 @@ alert("hi");                  // function call
 
 // Avoid
 // NO semicolons after }:
-if  (...) {...} else {...}
+if  (...) elseif {...} else {...}
 for (...) {...}
 while (...) {...}
 

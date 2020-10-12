@@ -1,4 +1,7 @@
-// Lab 4:
+//
+// Lab 4
+//
+
 // Create a script that takes a string variable "Hello world"
 // and translates it to at least 3 different languages
 // based on a 'language' variable.
@@ -19,8 +22,8 @@ switch (language) {
         toString = 'Hola Mundo';
         break;
     default:
-        toString = 'Hello, world';
+        //toString = 'Hello, world';
+        toString = '**UNDEFINED LANGUAGE**';
 }
 
 gs.info(fromString + ' in ' + language + ' ==> ' + toString);
-

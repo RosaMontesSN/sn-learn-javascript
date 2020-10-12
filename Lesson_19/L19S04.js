@@ -1,6 +1,7 @@
 //
 // L19S04 - Local variables scope
 //
+
 function toCelsius(fahrenheit) {
 
     // c is only known in the function toCelsius()
@@ -8,4 +9,5 @@ function toCelsius(fahrenheit) {
 
     return c;
 }
-gs.info(c); // What happened?
+
+gs.info(c); // What happened?  // Evaluator: org.mozilla.javascript.EcmaError: "c" is not defined.

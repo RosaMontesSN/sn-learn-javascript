@@ -1,6 +1,7 @@
 //
 // L03S01 - Simple variables & good/bad variable names
 //
+
 var name   = 'Chuck';   // Simple string variable
 var i      = 0;         // Simple integer variable
 var answer = true;      // Simple boolean variable

@@ -1,14 +1,19 @@
 //
-// Lab 6a: Create a script to accept a table name and
-// return a list records display values.
+// Lab 6a
+//
+
+// Create a script to accept a table name and
+// return a list of records display values.
 // Hint: use GlideRecord.getDisplayValue()
 //
+
 // @param tableName - name of table to query
-// @return array - list of record display values
+// @return answer (array) - list of record display values
 //
 function listRecords(tableName) {
 
     var answer = [];
+
     var recGr = new GlideRecord(tableName);
     recGr.query();
     

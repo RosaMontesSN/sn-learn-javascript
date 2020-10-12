@@ -1,50 +1,52 @@
 //
 // L35S01 - Inheritance
 //
-var vehicle = Class.create();
-vehicle.prototype = {
-    initialize: function(year, make, model) {
-      this.make = make;
-      this.model = model;
-      this.year = year;
+
+var Vehicle = Class.create();
+
+Vehicle.prototype = {
+    
+    initialize: function (year, make, model) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
     },
 
-    register : function() {
-      gs.info(this.getDisplayName() + ' registered!');
+    register: function () {
+        gs.info(this.getDisplayName() + ' registered!');
     },
 
-    info : function() {
-      gs.info('Vehicle info: TBD');
+    info: function () {
+        gs.info('Vehicle info: TBD');
     },
 
-    getDisplayName : function() {
-
-      return this.year + ' ' + this.make + ' ' + this.model;
-
+    getDisplayName: function () {
+        return this.year + ' ' + this.make + ' ' + this.model;
     },
 
-    type: 'vehicle'
+    type: 'Vehicle'
 };
 
-var car = Class.create();
-car.prototype = Object.extendsObject(vehicle, {
+var Car = Class.create();
 
-    findDealer : function() {
-      gs.info('Find dealer is not yet implemented');
+Car.prototype = Object.extendsObject(Vehicle, {
+
+    findDealer: function () {
+        gs.info('Find dealer is not yet implemented');
     },
 
-    info : function() {
-      gs.info('Car info: TBD');
+    info: function () {
+        gs.info('Car info: TBD');
     },
 
-    type: 'car'
+    type: 'Car'
 });
 
-var v1 = new vehicle('2018', 'John Deere', 'Tractor');
+var v1 = new Vehicle('2018', 'John Deere', 'Tractor');
 v1.register();
 v1.info();
 
-var v2 = new car('2017', 'Honda', 'CR-V');
+var v2 = new Car('2017', 'Honda', 'CR-V');
 v2.register();
-v2.findDealer();
 v2.info();
+v2.findDealer();

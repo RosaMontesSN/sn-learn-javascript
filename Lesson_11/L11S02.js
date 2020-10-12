@@ -1,6 +1,7 @@
 //
 // S11S02 - Boolean logic
 //
+
 // AND (&&) - both must be true
 //      +---------+---------+---------+
 //      |   AND   |  true   |  false  |
@@ -26,6 +27,7 @@
 //      |         |  false  |  true   |
 //      +---------+---------+---------+
 //
+
 var a = 1;
 var b = 3;
 var c = 5;
@@ -45,10 +47,12 @@ if (a < b)
 else
   gs.info('a is greater than or equal to b');
 
+
 var valveOpen = true;
 if (valveOpen == true)
   gs.info('Valve is currently open');
 
+var bool = valveOpen == true;
 if (bool)
   gs.info('Valve is currently open');
 

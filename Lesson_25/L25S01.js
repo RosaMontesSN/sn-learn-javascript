@@ -1,7 +1,9 @@
 //
 // L25S01 - ArrayUtil
 //
-var au = new ArrayUtil();
+
+var au = new ArrayUtil(); // Script Include: ArrayUtil
+
 var names = [
   "Eric",
   "Donna",
@@ -12,5 +14,7 @@ var names = [
   "Jessie",
   "Tomasz"
 ];
+
 var newNames = au.unique(names);
-gs.info(newNames.join(', '));
+
+gs.info(newNames.join(', ')); // *** Script: Donna, Melanie, Howard, Eric, Jessie, Tomasz

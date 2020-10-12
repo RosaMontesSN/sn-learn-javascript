@@ -1,9 +1,11 @@
 //
 // L13S02 - Multiple cases
 //
+
 // Using the switch statement
-var level = 5;
+var level = 5;  // = parseInt(result);
 var message = '';
+
 switch (level) {
   case 0:
     message = 'Empty';
@@ -27,4 +29,5 @@ switch (level) {
   default:
     message = 'Uh-oh!';
 }
+
 gs.info('Level=' + level + ' status=' + message);
